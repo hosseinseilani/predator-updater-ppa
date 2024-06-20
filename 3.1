@@ -1,0 +1,189 @@
+#last version
+3.1
+
+
+
+
+predator 3.1
+
+
+up
+
+ug
+
+echo >> "alias predator-updater='sudo python3 /opt/predator-os-updater/predator-updater/predator-os-updater.py'" /
+source ~/.bashrc
+
+sudo apt install apt-transport-https
+
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo install -o root -g root -m 644 microsoft.gpg /etc/apt/keyrings/microsoft-archive-keyring.gpg
+sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/microsoft-archive-keyring.gpg] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+
+
+sudo apt-get update
+sudo apt-get install
+
+
+
+export __NV_PRIME_RENDER_OFFLOAD=1
+export __VK_LAYER_NV_optimus=NVIDIA_only
+export __GLX_VENDOR_LIBRARY_NAME=
+
+
+echo "__NV_PRIME_RENDER_OFFLOAD=1" >> ~/.bashrc
+echo "__VK_LAYER_NV_optimus=NVIDIA_only" >> ~/.bashrc
+echo "__GLX_VENDOR_LIBRARY_NAME=nvidia" >> ~/.bashrc
+
+
+source ~/.bashrc
+
+
+sudo sed -i 's/^GRUB_CMDLINE_LINUX_DEFAULT="/&retbleed=off /' /etc/default/grub
+sudo sed -i 's/amd_pstate.enable=0/amd_pstate.enable=1/g' /etc/default/grub
+sudo sed -i 's/^GRUB_CMDLINE_LINUX_DEFAULT="/&amd-pstate=active /' /etc/default/grub
+
+
+sudo sed -i '/^GRUB_CMDLINE_LINUX_DEFAULT/s/"$/ amd-pstate=active"/' /etc/default/grub
+sudo sed -i '/^GRUB_CMDLINE_LINUX_DEFAULT/s/"$/ numa=on"/' /etc/default/grub
+
+
+sudo update-grub
+
+echo "kernel.split_lock_mitigate=0" >> /etc/sysctl.conf
+
+
+
+
+
+NUMA enabled)
+Performance governor as default
+Enable BBR2
+
+ 
+ 
+
+
+Apply automatic kernel optimization
+Apply kernel optimization for specific CPU architectures
+ 
+
+
+# Enable full preemption
+CONFIG_PREEMPT=y
+
+# Set timer frequency to 1000 Hz
+CONFIG_HZ_1000=y
+CONFIG_HZ=1000
+
+# Enable threaded IRQs
+CONFIG_IRQ_FORCED_THREADING=y
+
+# Enable voluntary kernel preemption
+CONFIG_PREEMPT_VOLUNTARY=y
+
+
+# Enable full tickless mode
+CONFIG_NO_HZ_FULL=y
+
+# Move RCU callbacks to KThread context
+CONFIG_RCU_NOCB_CPU=y
+
+# Enable batch RCU callbacks
+CONFIG_RCU_LAZY=y
+
+wget zip
+
+cp /opt/  /usr/share/applications
+
+
+
+
+passwordlist
+git clone https://github.com/danielmiessler/SecLists.git
+
+
+Assetnote Wordlists
+Kiterunner Wordlists
+Technology <=> Host Mappings
+
+wget -r --no-parent -R "index.html*" https://wordlists-cdn.assetnote.io/data/ -nH -e robots=off
+
+
+
+#updated the lookpicking tools(password lists)
+cd /opt/
+wget passwordlist.sh
+
+
+
+
+Viruscreds Malware Password Database
+This is an aggregate archive of malware backdoor passwords as uncovered by the Malvuln project.
+
+
+https://dl.packetstormsecurity.net/Crackers/wordlists/viruscreds-main.zip
+
+
+
+
+Star Names Wordlist
+This is a wordlist of 518 star names to be used for cracking.
+https://packetstormsecurity.com/files/download/160987/star-names.txt
+
+
+
+Arabic Names Dictionary
+This file contains two wordlists with both male and female Arabic names. Together there are over 1800 entries.
+
+
+https://dl.packetstormsecurity.net/Crackers/wordlists/names/arabicnames.zip
+
+
+
+Russian word list that has 296790 words.
+russian2.tgz
+https://dl.packetstormsecurity.net/Crackers/wordlists/language/russian2.tgz
+
+
+
+
+
+
+#add rootkits files to menu (look picking tools) and keylogers tools
+
+mkdi /opt/rootkits
+cd /opt/rootkits
+wget Collection-of-Linux.pdf 
+wget Rootkits-Linux.desktop
+cp Rootkits-Linux.desktop /usr/share/applications/
+
+
+
+
+
+wget Cupp.desktop -o /usr/share/applications
+
+
+
+#added Hiddify Multi-platform auto-proxy client  besides tor
+wget Hiddify-Debian-x64.deb -o /opt/Hiddify-Debian-x64.deb
+sudo dpkg -i /opt/Hiddify-Debian-x64.deb
+cp  hiddify.desktop  /usr/share/applications/hiddify.desktop
+
+
+https://github.com/drawdb-io/
+
+
+sudo apt install nala
+nala
+
+
+
+wget Shodan-Filters.pdf -o /opt/tutorial-mode-files/
+wget Shodan-filters.desktop -o /usr/share/applications
+
+wget sql-online.desktop
+
+
+wget prettyrecon.desktop
