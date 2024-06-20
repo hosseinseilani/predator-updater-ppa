@@ -5,19 +5,14 @@ new version
 
 # Setting up a PPA repository for updating Predator-OS
 
-### First, add the GPG key for the repository:
-```bash
-curl -fsSL https://www.seilany.ir/predator-os/predator-updater-ppa/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/predatos-os.gpg
-
-
 
 ## First, add the GPG key for the repository:
-```bash curl -fsSL https://www.seilany.ir/predator-os/predator-updater-ppa/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/predatos-os.gpg
+```bash curl -fsSL https://www.seilany.ir/predator-os/predator-updater-ppa/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/predatos-os.gpg```
 
 ## Next, add the repository to your system’s sources list:
-```bash echo "deb [arch=amd64] https://www.seilany.ir/predator-os/predator-updater-ppa ./" | sudo tee /etc/apt/sources.list.d/predator-os.list
+```bash echo "deb [arch=amd64] https://www.seilany.ir/predator-os/predator-updater-ppa ./" | sudo tee /etc/apt/sources.list.d/predator-os.list```
 
 ## Update your package cache:
-```bash sudo apt update
+```bash sudo apt update```
 
 
