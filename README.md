@@ -19,11 +19,11 @@ Setting up a PPA repository for updating Predator-OS
 #### finally:
 Open the synaptic package manager or discover to install the predator-updater package.
 
+<span style="color: red;">This text will be red</span>
 
 
-
-<b> Predator OS is a Linux distribution designed for penetration testing, ethical hacking, privacy, hardening, and security:</b>
- New features in version 3.1:
+** Predator OS is a Linux distribution designed for penetration testing, ethical hacking, privacy, hardening, and security:**
+ `New features in version 3.1:`
 
 1. Updating Predator OS: To update your Predator OS installation, follow the standard package update process using the package manager (apt or dnf, depending on your system).
 2. Enabling HTTPS (HTTP Secure): You can configure your web server (e.g., Apache or Nginx) to use HTTPS by obtaining an SSL certificate and adjusting your server configuration.
