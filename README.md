@@ -16,3 +16,5 @@ Setting up a PPA repository for updating Predator-OS
 ``` sudo apt update```
 
 
+#### finally:
+Open the synaptic package manager or discover to install the predator-updater package.
