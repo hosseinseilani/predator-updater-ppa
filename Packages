@@ -1,0 +1,16 @@
+Package: predator-os-updater
+Source: predator-os-updater
+Version: 3.1
+Architecture: amd64
+Maintainer: hossein-seilani <info.predator.os@gmail.com>
+Depends: bash,yad
+Filename: ./predator-os-updater-v3.1.deb
+Size: 726804
+MD5sum: 294abb5eb24471d5a1bd4e0a3ea57dae
+SHA1: 61bc7d636c6622667be24968c8016e706f4ae380
+SHA256: 17b08482a940b69791a78cea2076dfd43f13fdfc010d0b1b197b214de961297c
+Section: main
+Priority: standard
+Homepage: https://seilany.ir
+Description: predator-os-updater to upgrading the predator to the last version
+
