@@ -23,8 +23,8 @@ Open the synaptic package manager or discover to install the predator-updater pa
 ** Predator OS is a Linux distribution designed for penetration testing, ethical hacking, privacy, hardening, and security:**
  ```New features in version 3.1```
 
-1. Updating Predator OS: To update your Predator OS installation, follow the standard package update process using the package manager (apt or dnf, depending on your system).<br>
-2. Enabling HTTPS (HTTP Secure): You can configure your web server (e.g., Apache or Nginx) to use HTTPS by obtaining an SSL certificate and adjusting your server configuration.<br>
+[^1]: 1. Updating Predator OS: To update your Predator OS installation, follow the standard package update process using the package manager (apt or dnf, depending on your system).
+[^1]: 2. Enabling HTTPS (HTTP Secure): You can configure your web server (e.g., Apache or Nginx) to use HTTPS by obtaining an SSL certificate and adjusting your server configuration.
 3. Fixing SSH Errors: Troubleshoot SSH issues by checking SSH logs (/var/log/auth.log) and ensuring proper configuration in /etc/ssh/sshd_config.<br>
 4. Installing Visual Studio Code (VSCode): You can install VSCode on Linux by downloading the .deb package from the official website or using a package manager like apt.<br>
 5. Offloading Rendering to NVIDIA GPU: Ensure you have the appropriate NVIDIA drivers installed to enable GPU rendering. Then configure applications (such as browsers) to use the GPU for rendering.<br>
