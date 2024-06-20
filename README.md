@@ -1,3 +1,5 @@
+
+new version
 ## A PPA repo for updating predator-os to the last configs and updates.
 
 curl -fsSL https://hosseinseilani.github.io/predator-updater-ppa/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/predatos-os.gpg
