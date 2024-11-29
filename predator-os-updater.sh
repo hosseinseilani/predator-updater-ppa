@@ -1,4 +1,14 @@
-predator-os-updater script
+
 
 #predator-os updater script
-#this script download and install the last version of the predator os
+#this script downloads and installs the last version of the Predator os
+
+
+tput setaf 3;echo "--------------Updating predator-OS to last version---------------"
+echo
+sleep 3
+
+
+apt update
+
+mkdir /opt/updater-tester
